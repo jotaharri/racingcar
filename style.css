@@ -1,0 +1,66 @@
+
+.desktop{
+  position: relative;
+width: 1440px;
+height: 5000px;
+
+}
+.pista {
+  
+  position: absolute;
+  width: 342px;
+  height: 5065px;
+  left: 400px;
+  top: -32px;
+  
+  background: #C4C4C4;
+}
+
+.lineas {
+  position: absolute;
+  width: 0px;
+  height: 5065px;
+  left: 169px;  
+  top: -32px;
+  background: #C4C4C4;
+  border: 6px dashed #FFFFFF;
+  animation: drive 4s infinite ease-in-out;
+      
+}
+
+ /* mover lineas para emular velocidad */
+@keyframes drive {
+
+  to { transform: translate(0,-350px)}
+}
+
+.carmeta{
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 9%;
+  font-size: 90px;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.coche {
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  left: -91px;
+  top: 200px;
+  
+  background: url(racing-car.png);
+  transform: rotate(90deg);
+
+}
+
+
+
+
+
+
+
+
